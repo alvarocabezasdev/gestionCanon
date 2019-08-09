@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Movimientos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<div class="formulario">
+  <form [formGroup]="form" (ngSubmit)="agregarMovimiento()">
+    <div class="imagen">
+      <img src=""/>
+    </div>
+    <ion-label>Referencia</ion-label>
+    <ion-input formControlName="referencia" type="text"></ion-input>
+    <ion-label>Concepto</ion-label>
+    <ion-input formControlName="concepto" type="text"></ion-input>
+    <ion-label>Importe</ion-label>
+    <ion-input formControlName="importe" type="number"></ion-input>
+    <div class="boton">
+      <ion-button expand="block" type="submit">Añadir movimiento</ion-button>
+    </div>
+  </form>
+</div>
+
+</ion-content>
